@@ -9,9 +9,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-
 public class PlayItemAdapter extends ArrayAdapter<PlayItem> {
-
     public PlayItemAdapter(Activity context, ArrayList<PlayItem> playItems) {
         super(context, 0, playItems);
     }
@@ -22,15 +20,11 @@ public class PlayItemAdapter extends ArrayAdapter<PlayItem> {
         if (listItemView == null) {
             listItemView = LayoutInflater.from(getContext()).inflate(R.layout.list_item, parent, false);
         }
-
         PlayItem currentPlayItem = getItem(position);
-
         TextView nameTextView = listItemView.findViewById(R.id.name);
         nameTextView.setText(currentPlayItem.getmPlayItemName());
-
         TextView authorTextView = listItemView.findViewById(R.id.author);
         authorTextView.setText(currentPlayItem.getmPlayItemAuthor());
-
         return listItemView;
     }
 }

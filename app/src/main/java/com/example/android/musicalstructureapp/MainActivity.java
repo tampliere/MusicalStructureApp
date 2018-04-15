@@ -7,7 +7,6 @@ import android.view.View;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,7 +21,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(playlistIntent);
             }
         });
-
         TextView songs = findViewById(R.id.songs_text_view);
         songs.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -31,7 +29,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(songsIntent);
             }
         });
-
         TextView albums = findViewById(R.id.albums_text_view);
         albums.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -1,7 +1,6 @@
 package com.example.android.musicalstructureapp;
 
 public class PlayItem {
-
     private String mPlayItemName;
     private String mPlayItemAuthor;
 

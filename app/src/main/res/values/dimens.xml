@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="dpM">16dp</dimen>
-    <dimen name="spM">16dp</dimen>
-    <dimen name="spL">24dp</dimen>
+    <dimen name="spM">16sp</dimen>
+    <dimen name="spL">24sp</dimen>
 </resources>
